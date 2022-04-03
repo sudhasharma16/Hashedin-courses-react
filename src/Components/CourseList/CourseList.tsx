@@ -6,6 +6,23 @@ const url = "http://localhost:3001/products";
 
 const CourseList: React.FC = () => {
   const {courses} = useFetch(url);
+
+  
+
+  // const sortByPrice = (order: string) => {
+  //   if(order == "Asc") {
+  //     setCourses([...courses].sort((a: any,b: any) => {
+  //       return a.price - b.price;
+  //     }))
+  //   }
+
+  //   else {
+  //     setCourses([...courses].sort((a: any,b: any) => {
+  //       return b.price - a.price;
+  //     }))
+  //   }
+
+  // }
   console.log(courses);
   return (
     <>
@@ -14,7 +31,7 @@ const CourseList: React.FC = () => {
           console.log(course);
           const {id, title,  description, author, tags, price, discountedPrice} = course;
           return (
-            <CourseItem key={id} id={id} title ={title} description={description} author={author} tags={tags} price={price} discountedPrice={discountedPrice}/>
+            <CourseItem key={id} course={course}/>
           );
         })}
       </div>

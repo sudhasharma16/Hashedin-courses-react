@@ -1,7 +1,7 @@
 import React from 'react'
 import courseTh from "../../assets/courseTh.png";
 import Header from '../Header/Header';
-import "./style.css"
+import "./courseDisplayStyle.css"
 
 const CourseDisplay: React.FC = () => {
   const heading: string = "Discover latest courses on React"
@@ -14,8 +14,8 @@ const CourseDisplay: React.FC = () => {
     <div className="card courseTop">
         <div className="col-md-6">
             {/* <h4><strong>{{this.currentCourse.title}}</strong></h4> */}
-            <h4><strong>Title</strong></h4>
-            <h6>title</h6>
+            <h4 className="heading4"><strong>Title</strong></h4>
+            <h6 className="heading6">title</h6>
             {/* <h6>{{this.currentCourse.title}}</h6> */}
             <p>author</p>
             {/* <p>{{this.currentCourse.author}}</p> */}
@@ -50,7 +50,7 @@ const CourseDisplay: React.FC = () => {
         <p>description</p>
     </div>
 
-    <div className="container courseThumbnail">
+    <div className="courseThumbnail">
         <div><img className="courseImage" src={courseTh} /></div>
         <div>
             <div className="container">
