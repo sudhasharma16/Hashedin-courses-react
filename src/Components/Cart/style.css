@@ -1,0 +1,19 @@
+h6 {
+    text-align: center;
+}
+i {
+    color: #A6A6A5;
+}
+hr {
+    margin-left: 5%;
+    width: 90%;
+}
+
+a {
+    color: #FE8B1F;
+}
+
+.btn {
+    background-color: #FE8B1F;
+    color: white;
+  }

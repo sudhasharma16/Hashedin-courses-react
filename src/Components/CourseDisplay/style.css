@@ -1,0 +1,85 @@
+.courseThumbnail { 
+    max-width: 39%;
+    position: absolute;  
+    right: 5%; 
+    top:2%; 
+    z-index: 9; 
+    background-color: white;
+    margin-top: 2%;
+}
+.courseTop {
+    margin-top: 0.5%;
+    color: white;
+    padding: 2% 2% 2% 5%;
+    background-color: black;
+    max-height: 40%;
+}
+
+.courseBottom {
+    max-width: 51%;
+    border: 2px solid #E7E5E2;
+    margin: 1% 0 0 5%;
+    padding: 2% 2% 2% 0.5%;
+    height: 350px; 
+    background-color: white;
+    color: black;
+}
+
+.courseBottom p {
+    padding: 0 0 2% 0;
+    color: black;
+}
+
+h4, h6 {
+    padding: 3% 0 0 0;
+}
+
+p {
+    padding: 5% 0 0 0;
+    color: #FE8B1F;
+}
+
+img {
+    padding: 0.5%;
+    height: 90%;
+    width: 101%;
+}
+
+.btn-cart {
+    margin: 12% 1% 3% 0;
+    background-color: #FE8B1F;
+    color: white;
+}
+
+.btn-cart:hover {
+    background-color: white !important;
+    color: #FE8B1F;
+    border: 2px solid #FE8B1F;
+}
+
+.btn-wishlist {
+    margin: 12% 1% 3% 0;
+    background-color: white;
+    color: #FE8B1F;
+    border: 2px solid #FE8B1F;
+}
+
+.btn-wishlist:hover {
+    background-color: #FE8B1F;
+    color: white;
+    border: 2px solid #FE8B1F;
+}
+
+.row small {
+    padding: 2% 2% 0 1%;
+    color: #A6A6A5;
+}
+
+h3 {
+    padding: 4% 3% 0 0;
+}
+
+.modal-btn {
+    background-color: #FE8B1F;
+    color: white;
+  }

@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Angular - The Complete Guide (2022 Edition)",
+      "description": "Master Angular 13 (formerly 'Angular 2') and build awesome, reactive web apps with the successor of Angular.js",
+      "author": "Mosh",
+      "tags": [
+        "Angular",
+        "Angular 13"
+      ],
+      "price": 500,
+      "discountedPrice": 400
+    },
+    {
+      "id": 2,
+      "title": "The Modern Angular Bootcamp",
+      "description": "Get job ready with Angular! Understand how to build, test, and deploy production-ready apps.",
+      "author": "Sarath",
+      "tags": [
+        "Angular",
+        "TypeScript"
+      ],
+      "price": 400,
+      "discountedPrice": 400
+    },
+    {
+      "id": 3,
+      "title": "Angular (Full App) with Angularfire & NgRx",
+      "description": "Use Angular, Angular Material, Angularfire (+ Firebase with Firestore) and NgRx to build a real Angular App",
+      "author": "Mosh",
+      "tags": [
+        "Angular",
+        "Firebase"
+      ],
+      "price": 450,
+      "discountedPrice": 400
+    },
+    {
+      "id": 4,
+      "title": "The Complete Angular Course: Beginner to Advanced",
+      "description": "The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app with Angular, Firebase and Bootstrap 4",
+      "author": "Sarath",
+      "tags": [
+        "Angular"
+      ],
+      "price": 500,
+      "discountedPrice": 400
+    },
+    {
+      "id": 5,
+      "title": "Angular Crash Course for Busy Developers",
+      "description": "Have limited time to learn Angular 4 (Angular 2+)? Take this course and learn Angular in 10 hours!",
+      "author": "Veera",
+      "tags": [
+        "Angular"
+      ],
+      "price": 450,
+      "discountedPrice": 240
+    },
+    {
+      "id": 6,
+      "title": "Full Stack: Angular & Java Spring Boot",
+      "description": "Build a Full Stack E-Commerce website with Angular and Java Spring Boot (includes Stripe Credit Card Payments)",
+      "author": "Sarath",
+      "tags": [
+        "Angular"
+      ],
+      "price": 455,
+      "discountedPrice": 295
+    },
+    {
+      "id": 7,
+      "title": "Angular Material In Depth",
+      "description": "In-depth guided tour to the Angular Material component library (in Angular 13)",
+      "author": "Mosh",
+      "tags": [
+        "Angular"
+      ],
+      "price": 150,
+      "discountedPrice": 100
+    },
+    {
+      "id": 8,
+      "title": "Angular Styling & Animations (for Angular 2+)",
+      "description": "For Angular 2+: Learn how to use dynamic Styles and powerful Animations to create beautiful Angular Apps",
+      "author": "Sarath",
+      "tags": [
+        "Angular"
+      ],
+      "price": 450,
+      "discountedPrice": 400
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

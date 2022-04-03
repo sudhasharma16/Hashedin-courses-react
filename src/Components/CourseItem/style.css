@@ -1,0 +1,38 @@
+.card {
+    margin: 1% 0 1% 0;
+    box-shadow: 0 0 5px 0 rgba(100, 100, 100, 0.26);
+    cursor: pointer;
+  }
+
+
+  .fa-star {
+    color: gray;
+    cursor: pointer;
+  }
+
+  .fa-starSolid {
+    color: #FFC300 ;
+  }
+
+  .square {
+   
+    height:3vw;
+    width: 3vw;
+    background-color: rgb(241, 237, 237);
+  }
+
+  .btn {
+    background-color: #FE8B1F;
+    color: white;
+  }
+
+  .small-Elements {
+    margin-top: 1.5%;
+  }
+
+/* 
+  .btn-block:hover {
+    color: #FE8B1F;
+    background-color: white;
+    border: 1px solid #FE8B1F;
+  } */
