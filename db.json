@@ -107,20 +107,35 @@
     }
   ],
   "profile": {
+    "formState": {
+      "displayName": "",
+      "firstName": "",
+      "lastName": "",
+      "about": "",
+      "areaOfInterest": {
+        "designer": false,
+        "developer": false,
+        "projectManager": false,
+        "sales": false
+      },
+      "profession": "",
+      "experience": "",
+      "expertise": "",
+      "role": ""
+    },
     "displayName": "Sudhanshuezio",
     "firstName": "Sudhanshu",
     "lastName": "Sharma",
-    "about":"Software Engineer",
+    "about": "Software Engineer 2 dabcs",
     "areaOfInterest": {
       "designer": false,
       "developer": true,
       "projectManager": false,
       "sales": false
     },
-    "profession": "",
-    "experience":"",
-    "expertise":"",
-    "role":""
-
+    "profession": "professional",
+    "experience": "lessthan5",
+    "expertise": "",
+    "role": ""
   }
 }

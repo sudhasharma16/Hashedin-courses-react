@@ -1,22 +1,22 @@
-.card {
+.courseItemCard {
     margin: 1% 0 1% 0;
     box-shadow: 0 0 5px 0 rgba(100, 100, 100, 0.26);
     cursor: pointer;
   }
 
-  .square {
+  .courseItemSquare {
    
     height:3vw;
     width: 3vw;
     background-color: rgb(241, 237, 237);
   }
 
-  .btn {
+  .courseItembtn {
     background-color: #FE8B1F;
     color: white;
   }
 
-  .small-Elements {
+  .courseItemSmall-Elements {
     margin-top: 1.5%;
   }
 

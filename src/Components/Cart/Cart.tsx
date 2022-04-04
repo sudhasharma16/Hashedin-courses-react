@@ -25,8 +25,8 @@ const Cart: React.FC = () => {
 
   return (
     <div className="card pt-3 mt-2">
-    <h6>Your Cart Details</h6>
-    <hr style={{marginLeft: "5%"}}/>
+    <h6 className="cartHeading6">Your Cart Details</h6>
+    <hr className="cartHr" style={{marginLeft: "5%"}}/>
 
     { cartItems.length > 0 ? 
         <div>
@@ -37,7 +37,7 @@ const Cart: React.FC = () => {
             })}
           </ul>
         </div> : 
-        <div style={{fontSize: "smaller", padding: "3%"}}><i>Your cart is empty right now. Please add courses in the cart from the list</i></div>
+        <div style={{fontSize: "smaller", padding: "3%"}}><i className='cartItalic'>Your cart is empty right now. Please add courses in the cart from the list</i></div>
     }
     {/* <div *ngIf="cartItems.length === 0" style="font-size: smaller; padding: 3%;"><i>Your cart is empty right now. Please add courses in the cart from the list</i></div>
     <ul *ngIf="cartItems.length > 0" class="list-group">

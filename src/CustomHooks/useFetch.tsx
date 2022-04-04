@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 
 export const useFetch= (url: string) => {
   const [courses, setCourses] = useState([]);

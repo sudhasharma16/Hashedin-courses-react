@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useFetch } from '../../CustomHooks/useFetch'
 import CourseItem from '../CourseItem/CourseItem';
 
 const url = "http://localhost:3001/products";
 
 const CourseList: React.FC = () => {
-  const {courses} = useFetch(url);
-
   
+  const {courses} = useFetch(url)
+
 
   // const sortByPrice = (order: string) => {
   //   if(order == "Asc") {
@@ -27,7 +27,7 @@ const CourseList: React.FC = () => {
   return (
     <>
       <div>
-      {courses.map((course) => {
+      {courses.map((course: any) => {
           console.log(course);
           const {id, title,  description, author, tags, price, discountedPrice} = course;
           return (

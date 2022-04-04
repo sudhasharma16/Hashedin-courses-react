@@ -18,7 +18,7 @@ function App() {
             <Route path='courses' element={<Courses />} />
             <Route path='profile' element={<Profile />} />
             <Route path='wishlist' element={<Wishlist />} />
-            <Route path='coursedisplay' element={<CourseDisplay />} />
+            <Route path='courses/:id' element={<CourseDisplay />} />
             <Route path='*' element={<Error />} />
           </Route>
         </Routes>

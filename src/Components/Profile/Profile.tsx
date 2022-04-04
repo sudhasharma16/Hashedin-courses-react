@@ -3,13 +3,18 @@ import Header from "../Header/Header";
 import "./style.css";
 import profile from "../../assets/profile.png";
 import { ProfileModel } from "../../models/ProfileModel";
-// import axios from 'axios';
+import axios from 'axios';
 
 const url = "http://localhost:3001/profile";
 
 const Profile: React.FC = () => {
+
+  
+
+
   const value = "Profile";
-  const [formState, setFormState] = useState({
+  //const data = fetchData();
+  const [formState, setFormState] = useState<any>({
     displayName: "",
     firstName: "",
     lastName: "",
@@ -38,31 +43,53 @@ const Profile: React.FC = () => {
     }
     else if(e.target.type === "radio") {
       console.log("else if")
-      setFormState((prev) => {
+      setFormState((prev: any) => {
         return {...prev, [name]: id}
       })
     }
     else {
-      setFormState((prev) => {
+      setFormState((prev: any) => {
         return {...prev, [name]: value}
       })
     }
     
   }
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     console.log(formState);
+    try {
+      const resp = await axios.post(url, formState)
+      console.log(resp.data);
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   useEffect(() => {
-    console.log("Form State", formState)
-  }, [formState])
+    const fetchData = async () => {
+      try {
+        // axios.get(), axios.post(),axios.put(), axios.delete()
+        const response = await axios.get(url);
+        const data: any = response.data;
+        setFormState({formState, ...data})
+  
+        console.log("Axios data ->", data);
+        console.log("Axios Formstate -> ", formState);
+        //setFormState({ formState: response.data };
+        return data;
+      } catch (error: any) {
+        console.log(error.response);
+      }
+    };
+    //console.log("Form State", formState)
+    fetchData();
+  },[])
 
   return (
     <div className="container">
       <Header heading={value} />
-      <div className="card">
+      <div className="card profilecard">
         <div className="container rounded bg-white mt-5 mb-5">
           <div className="row">
             <div className="col-md-2 border-right">
@@ -79,11 +106,11 @@ const Profile: React.FC = () => {
                 <div className="p-3 py-5">
                   <div className="row mt-2">
                     <div className="col-md-4">
-                      <label className="labels">Display Name</label>
+                      <label className="labels profileLabels">Display Name</label>
                       <input
                         type="text"
                         id="displayname"
-                        className="form-control"
+                        className="form-control profileform-control"
                         placeholder="display name"
                         value={formState.displayName}
                         name="displayName"
@@ -148,7 +175,7 @@ const Profile: React.FC = () => {
                         <input
                           className="form-check-input"
                           type="checkbox"
-                          value=""
+                          checked={formState.areaOfInterest.projectManager}
                           id="projectManager"
                           onChange={onchange}
                         />
@@ -158,7 +185,7 @@ const Profile: React.FC = () => {
                         <input
                           className="form-check-input"
                           type="checkbox"
-                          value=""
+                          checked={formState.areaOfInterest.sales}
                           id="sales"
                           onChange={onchange}
                         />
@@ -289,7 +316,7 @@ const Profile: React.FC = () => {
                   </div>
                   <div className="mt-3">
                     <button
-                      className="btn btn-primary profile-button"
+                      className="btn profile-btn btn-primary profile-button"
                       type="submit"
                     >
                       Save

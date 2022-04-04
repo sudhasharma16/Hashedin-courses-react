@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
             </a>
             </ul>
             <ul className="nav">
-            <li className="nav-item pt-2"><Link className="links" to='/courses'>Courses</Link></li>
-            <li className="nav-item pt-2 pl-3"><Link className="links" to='/wishlist'>Wishlist</Link></li>
+            <li className="nav-item pt-2"><Link className="navbarlinks" to='/courses'>Courses</Link></li>
+            <li className="nav-item pt-2 pl-3"><Link className="navbarlinks" to='/wishlist'>Wishlist</Link></li>
             </ul>
             <ul style={{paddingLeft: "red"}} className ="nav">
             <li className="nav-item"><Link to='/courses' className="nav-link link-dark px-2" ><FontAwesomeIcon icon={faCartShopping} /></Link></li>

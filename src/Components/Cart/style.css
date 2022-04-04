@@ -1,19 +1,10 @@
-h6 {
+.cartHeading6 {
     text-align: center;
 }
-i {
+.cartItalic {
     color: #A6A6A5;
 }
-hr {
+.cartHr {
     margin-left: 5%;
     width: 90%;
 }
-
-a {
-    color: #FE8B1F;
-}
-
-.btn {
-    background-color: #FE8B1F;
-    color: white;
-  }
