@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Header from "../Header/Header";
-import "./style.css"
+import "./style.css";
+import profile from "../../assets/profile.png";
+import { ProfileModel } from "../../models/ProfileModel";
+// import axios from 'axios';
+
+const url = "http://localhost:3001/profile";
 
 const Profile: React.FC = () => {
   const value = "Profile";
@@ -45,6 +50,11 @@ const Profile: React.FC = () => {
     
   }
 
+  const handleSubmit = (e:any) => {
+    e.preventDefault();
+    console.log(formState);
+  }
+
   useEffect(() => {
     console.log("Form State", formState)
   }, [formState])
@@ -58,14 +68,14 @@ const Profile: React.FC = () => {
             <div className="col-md-2 border-right">
               <div className="d-flex flex-column align-items-end">
                 <img
-                  className="square mt-2"
+                  className="profilePic square mt-2"
                   width="100%"
-                  src="../../../../assets/profile.png"
+                  src={profile}
                 />
               </div>
             </div>
             <div className="col-md-10">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="p-3 py-5">
                   <div className="row mt-2">
                     <div className="col-md-4">
@@ -195,8 +205,9 @@ const Profile: React.FC = () => {
                               className="form-check-input"
                               type="radio"
                               name="experience"
-                              id="experience"
-                              value="lessthan5"
+                              id="lessthan5"
+                              onChange={onchange}
+                              value={formState.experience}
                             />
                             <label className="labels">0-5</label>
                           </div>
@@ -205,8 +216,9 @@ const Profile: React.FC = () => {
                               className="form-check-input"
                               type="radio"
                               name="experience"
-                              id="experience"
-                              value="intermediate"
+                              id="intermediate"
+                              onChange={onchange}
+                              value={formState.experience}
                             />
                             <label className="labels">5-10</label>
                           </div>
@@ -215,8 +227,9 @@ const Profile: React.FC = () => {
                               className="form-check-input"
                               type="radio"
                               name="experience"
-                              id="experience"
-                              value="senior"
+                              id="senior"
+                              onChange={onchange}
+                              value={formState.experience}
                             />
                             <label className="labels">10 and Above</label>
                           </div>
@@ -231,8 +244,9 @@ const Profile: React.FC = () => {
                               className="form-check-input"
                               type="radio"
                               name="expertise"
-                              id="expertise"
-                              value="java"
+                              id="java"
+                              onChange={onchange}
+                              value={formState.expertise}
                             />
                             <label className="labels">Java</label>
                           </div>
@@ -241,8 +255,9 @@ const Profile: React.FC = () => {
                               className="form-check-input"
                               type="radio"
                               name="expertise"
-                              id="expertise"
-                              value="react"
+                              id="react"
+                              onChange={onchange}
+                              value={formState.expertise}
                             />
                             <label className="labels">React</label>
                           </div>
@@ -251,8 +266,9 @@ const Profile: React.FC = () => {
                               className="form-check-input"
                               type="radio"
                               name="expertise"
-                              id="expertise"
-                              value="backend"
+                              id="backend"
+                              onChange={onchange}
+                              value={formState.expertise}
                             />
                             <label className="labels">Backend</label>
                           </div>

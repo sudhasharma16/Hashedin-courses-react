@@ -107,6 +107,20 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "displayName": "Sudhanshuezio",
+    "firstName": "Sudhanshu",
+    "lastName": "Sharma",
+    "about":"Software Engineer",
+    "areaOfInterest": {
+      "designer": false,
+      "developer": true,
+      "projectManager": false,
+      "sales": false
+    },
+    "profession": "",
+    "experience":"",
+    "expertise":"",
+    "role":""
+
   }
 }

@@ -4,16 +4,6 @@
     cursor: pointer;
   }
 
-
-  .fa-star {
-    color: gray;
-    cursor: pointer;
-  }
-
-  .fa-starSolid {
-    color: #FFC300 ;
-  }
-
   .square {
    
     height:3vw;
@@ -36,3 +26,6 @@
     background-color: white;
     border: 1px solid #FE8B1F;
   } */
+.faSolidStar .faStarOriginal {
+  color: #FFC300 ;
+}
